@@ -1,0 +1,280 @@
+<header id="home">
+<nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+      <nav class="pull">
+      <ul class="top-nav">
+        <li><a href="#intro">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+        <li><a href="#features">Features <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+        <li><a href="#portfolio">Portfolio <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+        <li><a href="#contact">Get in Touch <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+      </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+</nav>
+<section class="hero" id="hero">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-right navicon">
+      <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 text-center inner">
+      <h1 class="animated fadeInDown">Jun<span>Tanaka</span></h1>
+      <p class="animated fadeInUp delay-05s"> Developer Productivity Engineer</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center">
+      <a href="#portfolio" class="learn-more-btn">Go To Portfolio</a>
+    </div>
+  </div>
+</div>
+</section>
+</header>
+<section class="intro text-center section-padding" id="intro">
+<div class="container">
+  <div class="row">
+    <h1 class="arrow">About Me </h1>
+    <div class="col-md-2 wp1">
+      <%= image_tag 'avatar.jpg', class: '', style: 'border-radius: 50px; box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5); width:90%;' %>
+    </div>
+    <div class="col-md-10 wp1">
+      <p style="display: block; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0px; -webkit-margin-end: 0px; font-size:20px;">
+      <strong>
+      Over 5 years of experience designing, implementing, and adapting technically sophisticated rails/ios applications
+      using Ruby, Objective-C, Swift, and more. 
+      </strong>
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+<section class="features text-center section-padding" id="features">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="arrow">Love what i do, and i'll do it well</h1>
+      <div class="features-wrapper">
+        <div class="col-md-4 wp2">
+          <div class="icon">
+            <i class="fa fa-laptop shadow"></i>
+          </div>
+          <h2>OSS project</h2>
+          <p>I contribute open source code in my free-time.</p>
+        </div>
+        <div class="col-md-4 wp2 delay-05s">
+          <div class="icon">
+            <i class="fa fa-code shadow"></i>
+          </div>
+          <h2>Web/Mobile Development</h2>
+          <p>I develop web and mobile apps.</p>
+        </div>
+        <div class="col-md-4 wp2 delay-1s">
+          <div class="icon">
+            <i class="fa fa-heart shadow"></i>
+          </div>
+          <h2>Maximize Developer Productivity</h2>
+          <p>build test environments, monitoring system, and so on.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="swag text-center">
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1>Maximize Developer Productivity<span><em>programming can make a differnce</em></span></h1>
+      <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
+    </div>
+  </div>
+</div>
+</section>
+<section class="portfolio text-center section-padding" id="portfolio">
+<div class="container">
+  <h1 class="arrow">Works</h1>
+  <div class="row">
+    <div id="portfolioSlider">
+      <ul class="slides">
+        <li>
+        <div class="col-md-4 wp4">
+          <div class="overlay-effect effects clearfix">
+            <div class="img">
+              <%= image_tag('errbit.jpg', alt: 'Portfolio Item')  %>
+              <div class="overlay">
+                <a href="https://github.com/errbit/errbit/pull/872" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                <a class="close-overlay hidden">x</a>
+              </div>
+            </div>
+          </div>
+          <h2>Contribute to OSS project</h2>
+          <p><%= link_to('I love working on projects I want to work on', 'https://github.com/errbit/errbit/pull/872') %>.</p>
+        </div>
+        <div class="col-md-4 wp4 delay-05s">
+          <div class="overlay-effect effects clearfix">
+            <div class="img">
+              <%= image_tag('dragonsbattle.jpg', alt: 'Portfolio Item')  %>
+              <div class="overlay">
+                <a href="https://itunes.apple.com/jp/app/monsuta-yutetekodzukai-jiagi!/id951625217?mt=8" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                <a class="close-overlay hidden">x</a>
+              </div>
+            </div>
+          </div>
+          <h2>iPhone apps</h2>
+          <p><%= link_to('Currently I’m specialized in native iOS development.', 'https://itunes.apple.com/jp/app/monsuta-yutetekodzukai-jiagi!/id951625217?mt=8') %>.</p>
+        </div>
+        <div class="col-md-4 wp4 delay-1s">
+          <div class="overlay-effect effects clearfix">
+            <div class="img">
+              <%= image_tag('libinc.jpg', alt: 'Portfolio Item')  %>
+              <div class="overlay">
+                <a href="https://libinc.jp/" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                <a class="close-overlay hidden">x</a>
+              </div>
+            </div>
+          </div>
+          <h2>Web Deveopment</h2>
+          <p><%= link_to('Rails App( recruiting platform)', 'https://libinc.jp/') %>.</p>
+        </div>
+        </li>
+        <li>
+        <div class="col-md-4 wp4">
+          <div class="overlay-effect effects clearfix">
+            <div class="img">
+              <%= image_tag('portfolio-01.jpg', alt: 'Portfolio Item')  %>
+              <div class="overlay">
+                <a href="http://qiita.com/tjnet" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                <a class="close-overlay hidden">x</a>
+              </div>
+            </div>
+          </div>
+          <h2><%= link_to('Qiita', 'http://qiita.com/tjnet') %></h2>
+          <p>I sometimes post to qiita.</p>
+        </div>
+        <div class="col-md-4 wp4 delay-05s">
+          <div class="overlay-effect effects clearfix">
+            <div class="img">
+              <%= image_tag('portfolio-02.jpg', alt: 'Portfolio Item')  %>
+              <div class="overlay">
+                <a href="http://tjnet555.hatenablog.com/" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                <a class="close-overlay hidden">x</a>
+              </div>
+            </div>
+          </div>
+          <h2><%= link_to('Blog', 'http://tjnet555.hatenablog.com/') %></h2>
+          <p>This is my tech blog.</p>
+        </div>
+        <!--
+        <div class="col-md-4 wp4 delay-1s">
+          <div class="overlay-effect effects clearfix">
+            <div class="img">
+              <%#= image_tag('portfolio-03.jpg', alt: 'Portfolio Item')  %>
+              <div class="overlay">
+                <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                <a class="close-overlay hidden">x</a>
+              </div>
+            </div>
+          </div>
+          <h2>Creative Ideas</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+        </div>
+        -->
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+<div class="ignite-cta text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="#" class="ignite-btn">Ignite Your Passion</a>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="subscribe text-center">
+<div class="container">
+  <!--
+  <h1><i class="fa fa-paper-plane"></i><span>Subscribe to stay in the loop</span></h1>
+  <form action="#">
+    <input type="text" name="" value="" placeholder="" required>
+    <input type="submit" name="" value="Send">
+  </form>
+  -->
+</div>
+</section>
+<section class="dark-bg text-center section-padding contact-wrap" id="contact">
+<a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="arrow">Contact</h1>
+    </div>
+  </div>
+  <!--
+  <div class="row contact-details">
+    <div class="col-md-4">
+      <div class="light-box box-hover">
+        <h2><i class="fa fa-map-marker"></i><span>GitHub</span></h2>
+        <p>Level 6, 23 Pitt St, Sydney</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="light-box box-hover">
+        <h2><i class="fa fa-mobile"></i><span>Twitter</span></h2>
+        <p>+61 9 211 3747</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="light-box box-hover">
+        <h2><i class="fa fa-paper-plane"></i><span>Facebook</span></h2>
+        <p><a href="#"></a></p>
+      </div>
+    </div>
+  </div>
+  -->
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="social-buttons">
+        <li><a href="https://twitter.com/tanakajun3" class="social-btn"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.facebook.com/jun.tanaka.376695" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+      <ul>
+      <li>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+<footer>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="legals">
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Legals</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 credit">
+      <p>Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a> exclusively for <a href="http://tympanus.net/codrops/"><em>Codrops</em></a></p>
+    </div>
+  </div>
+</div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<%= javascript_include_tag "waypoints.min" %>
+<%= javascript_include_tag "bootstrap.min" %>
+<%= javascript_include_tag "scripts" %>
+<%= javascript_include_tag "jquery.flexslider" %>
+<%= javascript_include_tag "modernizr" %>
